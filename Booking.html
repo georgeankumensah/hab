@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="./styles/Booking.css">
+  </head>
+  <body>
+    <header>
+      <h1>Hospital Appointment Booking</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Appointments</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Book an Appointment</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+          <option value="">Select department</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="neurology">Neurology</option>
+          <option value="dermatology">Dermatology</option>
+        </select>
+        <label for="doctor">Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="">Select doctor</option>
+          <option value="john-doe">John Doe</option>
+          <option value="jane-doe">Jane Doe</option>
+        </select>
+        <button type="submit">Book Now</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2021 Hospital Appointment Booking</p>
+    </footer>
+  </body>
+</html>

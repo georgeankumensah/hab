@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h2{
+    font-size: 38px;
+    margin: 20px 0;
+}
+nav{
+    display: flex;
+    background: #014d7a;
+    color: white;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+#toggle-menu{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+#sidebar.active{
+    display: block;
+}
+/* logo in navbar */
+nav img{
+    height: 80px;
+    display: none;
+}
+nav>a{
+display: flex;
+align-items: center;
+text-decoration: none;
+color: white;
+}
+nav a span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* list of links */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    margin-right: 20px;
+}
+nav ul a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul a:hover{
+    color: yellow;
+}
+/* buttons on navbar */
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div button{
+    border: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+nav div button:first-child{
+    color:white;
+    margin-right: 10px;
+}
+nav div button:first-child:hover{
+    color:#014d7a;
+    background-color: white;
+    cursor: pointer;
+}
+nav div button:nth-child(2){
+    color:#014d7a;
+    background-color: white;
+}
+nav div button:nth-child(2):hover{
+    background-color:#014d7a;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero section */
+/* ============================= */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.hero-text h1{
+    font-size: 48px;
+color:#014d7a;
+margin-bottom: 10px;
+
+}
+.hero-text p{
+    font-size: 20px;
+color:#161616;
+
+}
+.hero-text button{
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: white;
+    background-color:#014d7a;
+}
+.hero-text button:hover{
+    color:#014d7a;
+    background-color: white;
+    cursor: pointer;
+
+}
+.hero img{
+    width: 50%;
+    height: 80vh;
+}
+
+/*appointments  section*/
+.appointments{
+    display: block;
+    padding: 100px 100px;
+}
+.appointments h2{
+    color: #014d7a;
+    text-align: center;
+}
+.appointments>p{
+    text-align: center;
+   font-size: 20px;
+   margin-bottom: 50px;
+}
+.appointments .card-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+.appointments .card{
+    background-color: #014d7a;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+
+}
+.appointments .card:hover{
+    background-color: #f9fbfc;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(8, 7, 7);
+    box-shadow:1px 1px 10px #1616163a;
+
+}
+.appointments .card img{
+    width: 100%;
+    aspect-ratio: 10/9;
+    align-self: center;
+    border-radius: 10px;
+}
+.appointments .card h5{
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.appointments .card p{
+    font-weight: 200;
+    font-size: 16px;
+}
+.appointments .card button{
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: white;
+    color:#014d7a;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.appointments .card button:hover{
+    cursor: pointer;
+color: white;
+    background-color:#014d7a;
+    
+}
+/* about section */
+.about{
+    display: flex;
+    justify-content: space-between;
+    background-color:#014d7a;
+    padding: 100px 100px;
+
+}
+.about-text{
+    display: block;
+    color: white;
+}
+.about img{
+    height: 500px;
+}
+/* footer  */
+footer{
+    background-color: #014d7a;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li{
+
+    margin-bottom: 10px;
+    color: white;
+}
+footer ul li:first-child{
+
+    font-weight: 600;
+}
+footer ul li a{
+text-decoration: none;
+color: white;
+}
+footer ul li a:hover{
+color: yellow;
+}
+footer img{
+    height: 200px;
+}
+
+/* media queries */
+@media only screen and (max-width: 480px) {
+    /* Your CSS rules for mobile devices go here */
+    
+    nav ul{
+        display: none;
+    }
+    nav div{
+        display: none;
+    }
+    nav{
+        padding: 15px 20px;
+    }
+    #toggle-menu{
+        display: block;
+    }
+    .hero{
+        padding:0;
+        position: relative;
+    }
+    .hero-text{
+        position: absolute;
+        padding-left: 20px;
+        height: 100%;
+    
+        background-color: #1616168f;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .hero-text h1{
+        color: white;
+        margin-top: 100px;
+    }
+    .hero-text p {
+        color: white;
+    }
+    .about{
+        padding: 100px 24px;
+    }
+    .about img{
+        display: none;
+    }
+    .appointments{
+        padding: 100px 24px;
+    }
+    .appointments .card-container{
+    grid-template-columns: 1fr;
+    }
+    footer{
+        padding: 50px 24px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px
+    }
+    footer ul:last-child{
+        grid-column: span 2;
+        grid-row: span 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer ul:last-child li:first-child{
+
+       display: none;
+    }
+    
+    
+
+}
