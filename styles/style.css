@@ -129,8 +129,8 @@ color:#161616;
     cursor: pointer;
 
 }
-.hero img{
-    width: 50%;
+.hero div img{
+    width: 100%;
     height: 80vh;
 }
 
@@ -293,10 +293,21 @@ form button{
     .hero-text{
         position: absolute;
         padding-left: 20px;
-        height: 100%;
+        z-index: 2;
     
-        background-color: #1616168f;
     }
+    .image-container {
+        position: relative;
+      }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
     .hero img{
         width: 100%;
     }
