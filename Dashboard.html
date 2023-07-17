@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Appointment Booking</title>
     <link rel="stylesheet" href="./styles/Dashboard.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+
   </head>
   <body>
-    <header>
-      <h1>Hospital Appointment Booking</h1>
-      <nav>
+    <nav>
+        <a href="/">
+          <img src="./assets/ucc-logo.png" alt="logo" />
+          <span> TRUST HOSPITAL </span>
+        </a>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Appointments</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/Booking.html">My Booking</a>
+          </li>
+          <li>
+            <a href="./Dashboard.html">My Dashboard</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
         </ul>
+        <div>
+          <button>create account</button>
+          <button>Log In</button>
+        </div>
+        <span id="toggle-menu" class="material-symbols-outlined"> menu </span>
       </nav>
-    </header>
     <main>
       <h2>My Appointments</h2>
       <table>
@@ -45,8 +62,35 @@
       </table>
     </main>
     <footer>
-      <p>&copy; 2021 Hospital Appointment Booking</p>
-    </footer>
+        <img src="./assets/ucc-logo.png" alt="" />
+        <ul>
+          <li class="field">General information</li>
+          <li><a href="">Our services</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact our main office</a></li>
+        </ul>
+        <ul>
+          <li class="field">Legal authority</li>
+          <li><a href="">privacy policy</a></li>
+          <li><a href="">terms and conditions</a></li>
+          <li><a href="">back to top</a></li>
+        </ul>
+        <ul>
+          <li class="field">Support</li>
+          <li><a href="">Visit our main website</a></li>
+          <li><a href="">Ask for support</a></li>
+          <li><a href="">Call Center</a></li>
+        </ul>
+        <ul>
+          <li class="field">Follow Us</li>
+          <li><a href="">facebook</a></li>
+          <li><a href="">twitter</a></li>
+          <li><a href="">instagram</a></li>
+        </ul>
+      </footer>
+      <footer>
+        <p>&copy; 2021 Hospital Appointment Booking</p>
+      </footer>
     <script src="app.js"></script>
   </body>
 </html>

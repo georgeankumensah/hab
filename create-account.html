@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Appointment Booking - Create Account</title>
     <link rel="stylesheet" href="./styles/auth.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+
   </head>
   <body>
-    <header>
-      <h1>Hospital Appointment Booking</h1>
-    </header>
-    <main>
+    <nav>
+      <a href="/">
+        <img src="./assets/ucc-logo.png" alt="logo" />
+        <span> TRUST HOSPITAL </span>
+      </a>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/Booking.html">My Booking</a>
+        </li>
+        <li>
+          <a href="./Dashboard.html">My Dashboard</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+      </ul>
+      <div>
+        <form action="create-account.html">
+          <button>create account</button>
+        </form>
+        <form action="login.html">
+          <button>Log In</button>
+        </form>
+      </div>
+      <span id="toggle-menu" class="material-symbols-outlined"> menu </span>
+    </nav>    <main>
       <h2>Create Account</h2>
       <form>
         <label for="name">Name:</label>
