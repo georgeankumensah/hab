@@ -20,10 +20,64 @@ nav{
 }
 #sidebar{
     display: none;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    height: 80vh;
+    animation-name:slideIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+#sidebar ul{
+    list-style: none;
+    margin-top: 30px;
+    padding: 0 30px;
+  
+}
+#sidebar ul li{
+    margin: 10px 0;
+}
+#sidebar ul li  a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #161616;
+}
+#sidebar ul li  a:active{
+    color: #014d7a;
 }
 #sidebar.active{
     display: block;
+    right: 0;
+    top: 0;
+    
 }
+#close-button{
+    color: #161616;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 40px;
+    border: 2px solid red;
+    
+}
+
+/* animation for sidebar */
+@keyframes slideIn{
+    from{
+        right: -100px;
+    }
+    to{
+        right: 0;
+    }
+}
+
+
+
+
+
+
 /* logo in navbar */
 nav img{
     height: 80px;
